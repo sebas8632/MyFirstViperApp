@@ -1,0 +1,21 @@
+Guia para la implementación del patrón de diseño VIPER en iOS App's.
+
+1. Se crea la estructura (esqueleto) del proyecto de la siguiente forma.
+
+-MyFirstViperApp
+	-Entities(d)
+	-PostList(d)
+		-Interactor(d)
+		-Protocols(d)
+		-Presenter(d)
+		-View(d)
+		-WireFrame(d)
+
+Nota: Por cada vista se crea un directorio raiz, en este caso PostList.
+
+2. Despues se instalan las dependencias necesarias para el proyecto, en este caso estas:
+	-Alamofire.
+	-AlamofireObjectMapper.
+	-AlamofireImage.
+
+3. Luego, 
