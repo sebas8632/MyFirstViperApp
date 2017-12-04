@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E12FD6B1FD4CF29009A4993 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12FD6A1FD4CF29009A4993 /* Endpoints.swift */; };
 		9EB8CA051FD0F0AD002DA42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8CA041FD0F0AD002DA42E /* AppDelegate.swift */; };
 		9EB8CA071FD0F0AD002DA42E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8CA061FD0F0AD002DA42E /* ViewController.swift */; };
 		9EB8CA0A1FD0F0AD002DA42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB8CA081FD0F0AD002DA42E /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		6540E81F97B99AB2932E3D89 /* Pods_MyFirstViperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFirstViperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E12FD6A1FD4CF29009A4993 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		9EB8CA011FD0F0AD002DA42E /* MyFirstViperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstViperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB8CA041FD0F0AD002DA42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EB8CA061FD0F0AD002DA42E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9E12FD691FD4CF01009A4993 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9E12FD6A1FD4CF29009A4993 /* Endpoints.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		9EB8C9F81FD0F0AD002DA42E = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		9EB8CA031FD0F0AD002DA42E /* MyFirstViperApp */ = {
 			isa = PBXGroup;
 			children = (
+				9E12FD691FD4CF01009A4993 /* Common */,
 				9EB8CA171FD0F0EF002DA42E /* PostList */,
 				9EB8CA161FD0F0DF002DA42E /* Entities */,
 				9EB8CA041FD0F0AD002DA42E /* AppDelegate.swift */,
@@ -278,6 +289,7 @@
 				9ED2F4B11FD0F69F004B0587 /* PostModel.swift in Sources */,
 				9EB8CA051FD0F0AD002DA42E /* AppDelegate.swift in Sources */,
 				9EB8CA1E1FD0F1F6002DA42E /* PostListProtocol.swift in Sources */,
+				9E12FD6B1FD4CF29009A4993 /* Endpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

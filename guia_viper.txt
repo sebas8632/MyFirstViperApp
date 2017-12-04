@@ -18,4 +18,8 @@ Nota: Por cada vista se crea un directorio raiz, en este caso PostList.
 	-AlamofireObjectMapper.
 	-AlamofireImage.
 
-3. Luego, 
+3. Luego, Se crea la entidad PostModel, la cual tendrá los atributos y se mapearan con objectMapper.
+
+4. Se crea un archivo postListProtocol.swift donde se crean los protocolos para cada modulo de la arquitectura.
+
+5. 
