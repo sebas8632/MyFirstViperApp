@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9E12FD6B1FD4CF29009A4993 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12FD6A1FD4CF29009A4993 /* Endpoints.swift */; };
+		9E12FD6F1FD4D76A009A4993 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12FD6E1FD4D76A009A4993 /* PostListView.swift */; };
+		9E12FD711FD4DF07009A4993 /* PostListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12FD701FD4DF07009A4993 /* PostListCell.swift */; };
 		9EB8CA051FD0F0AD002DA42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8CA041FD0F0AD002DA42E /* AppDelegate.swift */; };
 		9EB8CA071FD0F0AD002DA42E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8CA061FD0F0AD002DA42E /* ViewController.swift */; };
 		9EB8CA0A1FD0F0AD002DA42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB8CA081FD0F0AD002DA42E /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		6540E81F97B99AB2932E3D89 /* Pods_MyFirstViperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFirstViperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E12FD6A1FD4CF29009A4993 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		9E12FD6E1FD4D76A009A4993 /* PostListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		9E12FD701FD4DF07009A4993 /* PostListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListCell.swift; sourceTree = "<group>"; };
 		9EB8CA011FD0F0AD002DA42E /* MyFirstViperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstViperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB8CA041FD0F0AD002DA42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EB8CA061FD0F0AD002DA42E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 		9EB8CA181FD0F18D002DA42E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9E12FD6E1FD4D76A009A4993 /* PostListView.swift */,
+				9E12FD701FD4DF07009A4993 /* PostListCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -289,7 +295,9 @@
 				9ED2F4B11FD0F69F004B0587 /* PostModel.swift in Sources */,
 				9EB8CA051FD0F0AD002DA42E /* AppDelegate.swift in Sources */,
 				9EB8CA1E1FD0F1F6002DA42E /* PostListProtocol.swift in Sources */,
+				9E12FD6F1FD4D76A009A4993 /* PostListView.swift in Sources */,
 				9E12FD6B1FD4CF29009A4993 /* Endpoints.swift in Sources */,
+				9E12FD711FD4DF07009A4993 /* PostListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

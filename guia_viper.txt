@@ -17,9 +17,27 @@ Nota: Por cada vista se crea un directorio raiz, en este caso PostList.
 	-Alamofire.
 	-AlamofireObjectMapper.
 	-AlamofireImage.
+	-PKHUD.
+
+// Modulo Entity.
 
 3. Luego, Se crea la entidad PostModel, la cual tendrá los atributos y se mapearan con objectMapper.
 
 4. Se crea un archivo postListProtocol.swift donde se crean los protocolos para cada modulo de la arquitectura.
 
-5. 
+// Modulo View
+
+5. Se crea en el modulo view un archivo de tipo cocoa Touch con el nombre postListView.
+
+6. Se agrega una table view al viewController en Main.StoryBoard y se configura para que sea de tipo postListView.
+
+7. Se agrega el IBOutlet de la tableView en el viewController, además se crea la variable presenter, la cual es de tipo postListPresenterProtocol y la variable postList, la cual es un array de PostModel.
+
+8. En la función viewDidLoad() de la viewController, se llama a la función viewDidLoad() del presentador y se agrega un footer(?).
+
+9. En las otras funciones se agrega las funciones necesarias para mostrar el estado de la carga de los post con la libreria PKHUD.
+
+10. Se implementan los metodos de los delegados de la tableView..
+
+
+//	Modulo Presenter.

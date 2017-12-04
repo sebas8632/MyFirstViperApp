@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Post List View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PostListView" customModule="MyFirstViperApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,65 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V2c-TD-0tJ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostListCell" id="hIf-WY-txH" customClass="PostListCell" customModule="MyFirstViperApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hIf-WY-txH" id="6CP-Ot-vfi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-fQ-KIf">
+                                                    <rect key="frame" x="8" y="10" width="128" height="128"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ih1-VF-zVg">
+                                                    <rect key="frame" x="166" y="26" width="183" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gI4-fQ-KIf" secondAttribute="bottom" constant="3" id="32s-Hn-pxn"/>
+                                                <constraint firstItem="gI4-fQ-KIf" firstAttribute="leading" secondItem="6CP-Ot-vfi" secondAttribute="leadingMargin" id="IRQ-xr-dYp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gI4-fQ-KIf" secondAttribute="trailing" constant="231" id="JsF-5a-rm8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ih1-VF-zVg" secondAttribute="trailing" constant="18" id="K8A-7b-C24"/>
+                                                <constraint firstItem="ih1-VF-zVg" firstAttribute="top" secondItem="6CP-Ot-vfi" secondAttribute="topMargin" constant="18" id="Wbz-EL-xZf"/>
+                                                <constraint firstItem="gI4-fQ-KIf" firstAttribute="top" secondItem="6CP-Ot-vfi" secondAttribute="topMargin" constant="2" id="hYv-dG-GCn"/>
+                                                <constraint firstItem="ih1-VF-zVg" firstAttribute="leading" secondItem="gI4-fQ-KIf" secondAttribute="trailing" constant="30" id="kFy-hW-gNa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImage" destination="gI4-fQ-KIf" id="ew6-Sz-RiQ"/>
+                                            <outlet property="postName" destination="ih1-VF-zVg" id="SDR-VG-doh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="07r-zM-7P5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CFm-uR-dmj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V2c-TD-0tJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PWA-eG-p9e"/>
+                            <constraint firstAttribute="trailing" secondItem="V2c-TD-0tJ" secondAttribute="trailing" id="jEd-aE-WST"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V2c-TD-0tJ" secondAttribute="bottom" id="rfe-Hf-bhW"/>
+                            <constraint firstItem="V2c-TD-0tJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="sDJ-kP-X3h"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="V2c-TD-0tJ" id="dGL-Fy-pUD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="-161.46926536731635"/>
         </scene>
     </scenes>
 </document>

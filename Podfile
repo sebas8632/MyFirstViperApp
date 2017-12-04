@@ -10,5 +10,6 @@ target 'MyFirstViperApp' do
   	pod 'Alamofire', '~> 4.5.0'
 	pod 'AlamofireObjectMapper', '~> 4.0'  
 	pod 'AlamofireImage', '~> 3.3'
+	pod 'PKHUD', '~> 4.0'
 
 end
