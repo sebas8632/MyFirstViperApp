@@ -41,3 +41,28 @@ Nota: Por cada vista se crea un directorio raiz, en este caso PostList.
 
 
 //	Modulo Presenter.
+
+Se crea el archivo PostListPresenter, que extiende de PostListPresenterProtocol.
+
+11. Se crea la variable view con el indicador weak, el cual indica que la relación entre el presentador y la view es debil ya que esta misma relación es strong en el archivo de la view.
+
+12. Se definen las variables de el interactor y el wireframe.
+
+13. Se implementan las funciones  para cargar los post y para mostrar detalladamente uno de esos.
+
+14. Se crea una extensión, en la cual se implementaran las funciones del interactor de salida.
+
+
+// Modulo Interactor.
+
+Se crea el archivo PostListInteractor el cual extiende de PostListInteractorProtocol.
+
+15. Se crea la variable presenter con el indicador weak, el cual indica que la relaciòn entre el interactor y presenter es debil ya que esta misma relación desde el presentador es strong.
+
+16. Se crea la variable para obtener los datos desde remoteDataManager.
+
+17. Se implementa la función que obtiene los datos desde la API.
+
+18. Se crea una extensión de tipo PostListDataManagerOutputProtocol, el cual tiene unos metodos que se utilizan cuando se cargan los datos desde la API.
+
+
