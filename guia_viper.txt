@@ -65,4 +65,18 @@ Se crea el archivo PostListInteractor el cual extiende de PostListInteractorProt
 
 18. Se crea una extensión de tipo PostListDataManagerOutputProtocol, el cual tiene unos metodos que se utilizan cuando se cargan los datos desde la API.
 
+19. Se crea el directorio dataManager>Remote donde se creará el postListRemoteDatamanager que extiende de PostListRemoteDatamanagerInputProtocol, el cual tiene una función para obtener los post de la API a través de Alamofire.
+
+
+// Modulo WireFrame.
+
+20. Se crea el archivo PostListWireFrame que extiende de PostListWireFrameProtocol.
+
+21. En el main.storyboard, se crea un navigationBar y se conecta con la vista PostListView.
+
+22. EN el archivo PostListWireFrame, en el metodo createPostListModule, se inicializan cada uno de los modulos (View, Presenter, Interactor, Wireframe, Datamanager).
+
+23. Se implementa la función didFinishLaunchWithOptions en el appDelegate para que ejecute el metodo createPostListModule creado anteriormente.
+
+
 

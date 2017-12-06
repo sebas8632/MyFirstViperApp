@@ -18,6 +18,7 @@ class PostListView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("INICIO-VIEW")
         //Se indica que inicia el proceso de carga de la view al presenter.
         presenter?.viewDidLoad()
         //Se agrega un footer(?).
@@ -80,7 +81,7 @@ extension PostListView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "postListCell", for: indexPath) as! PostListCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostListCell", for: indexPath) as! PostListCell
         
         let post = postList[indexPath.row]
         

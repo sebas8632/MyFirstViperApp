@@ -34,9 +34,11 @@ class PostListInteractor: PostListInteractorInputProtocol{
 extension PostListInteractor: PostListRemoteDataManagerOutputProtocol{
     
     /*
-     Función que envía los post desde el dataManager hasta el presentador.
+     Función que envía los post desde el interactor hasta el presentador.
      */
     func onPostsRetrieved(_ posts: [PostModel]) {
+        
+        print("El tamaño es: \(posts)")
         
         presenter?.didRetrievePosts(posts)
         

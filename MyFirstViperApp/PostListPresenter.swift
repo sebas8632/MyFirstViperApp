@@ -19,6 +19,7 @@ class PostListPresenter: PostListPresenterProtocol {
      Función que carga los post del interactor al presenter.
      */
     func viewDidLoad(){
+        print("INICIO-PRESENTER")
         view?.showLoading()
         interactor?.retrievePostList()
     }
@@ -35,7 +36,7 @@ class PostListPresenter: PostListPresenterProtocol {
 extension PostListPresenter: PostListInteractorOutputProtocol{
     
     /*
-     Función que permite mostrar los post desde el interactor.
+     Función que permite enviar los post desde el presenter a la view.
      */
     func didRetrievePosts(_ posts: [PostModel]){
     

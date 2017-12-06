@@ -28,8 +28,8 @@ extension PostModel: Mappable {
     mutating func mapping(map: Map){
         id  <- map["id"]
         title   <- map["title"]
-        imageUrl    <- map["imageUrl"]
-        thumbImageUrl   <- map["thumbImageUrl"]
+        imageUrl    <- map["url"]
+        thumbImageUrl   <- map["thumbUrl"]
         
     }
 }
