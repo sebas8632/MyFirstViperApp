@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hIf-WY-txH" id="6CP-Ot-vfi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-fQ-KIf">
@@ -99,6 +99,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4e6-Hm-6zk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="-161.46926536731635"/>
+        </scene>
+        <!--Post Detail View-->
+        <scene sceneID="ZKC-Bj-Cdq">
+            <objects>
+                <viewController storyboardIdentifier="PostDetailController" id="5np-Wt-gx8" customClass="PostDetailView" customModule="MyFirstViperApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Nd-u4-ct9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ked-DQ-G0c"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="1Xn-Yn-y9f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KBh-1p-1WT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="9aq-JX-aV3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8r-e5-PMs">
+                                <rect key="frame" x="7" y="308" width="360" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="kau-5L-xGb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KBh-1p-1WT" firstAttribute="top" secondItem="1Xn-Yn-y9f" secondAttribute="top" id="OF3-ff-dk2"/>
+                            <constraint firstItem="KBh-1p-1WT" firstAttribute="leading" secondItem="1Xn-Yn-y9f" secondAttribute="leading" id="QAs-4O-oAb"/>
+                            <constraint firstItem="g8r-e5-PMs" firstAttribute="top" secondItem="KBh-1p-1WT" secondAttribute="bottom" constant="8" id="c8J-cR-UY5"/>
+                            <constraint firstAttribute="trailing" secondItem="g8r-e5-PMs" secondAttribute="trailing" constant="8" id="m4C-87-LBa"/>
+                            <constraint firstAttribute="trailing" secondItem="KBh-1p-1WT" secondAttribute="trailing" id="mED-Dq-QjY"/>
+                            <constraint firstItem="g8r-e5-PMs" firstAttribute="leading" secondItem="1Xn-Yn-y9f" secondAttribute="leading" constant="7" id="nBI-sz-B3a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6pI-Op-roB"/>
+                    <connections>
+                        <outlet property="postDetailImage" destination="KBh-1p-1WT" id="yXt-o6-7C1"/>
+                        <outlet property="postDetailTitle" destination="g8r-e5-PMs" id="Lwg-gk-cuC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0J-Kz-MJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="-865"/>
         </scene>
     </scenes>
 </document>

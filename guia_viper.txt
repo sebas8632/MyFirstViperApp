@@ -80,3 +80,21 @@ Se crea el archivo PostListInteractor el cual extiende de PostListInteractorProt
 
 
 
+
+
+
+// VIPER EN LA VISTA DETALLES
+
+
+1. Se crea el directorio postDetails y dentro de este los siguientes modulos:
+	- Presenter.
+	- Protocols.
+	- WireFrame.
+	- View.
+
+2. Dentro del modulo protocols, se crea el archivo postDetailPrtocols, el cual contendrá los protocolos que se utilizaran en todo el modulo.
+
+3. Se crea el postDetailViewController en el storyboard con sus respectivos campos, además de crean los IBOutlets en el viewController.
+
+4. En el archivo postDetailView se crea l a extensión que contendrá la función showPostDetail la cual setea el titulo y la imagen del post.
+
