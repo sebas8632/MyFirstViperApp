@@ -92,9 +92,34 @@ Se crea el archivo PostListInteractor el cual extiende de PostListInteractorProt
 	- WireFrame.
 	- View.
 
+// Modulo Protocols.
+
 2. Dentro del modulo protocols, se crea el archivo postDetailPrtocols, el cual contendrá los protocolos que se utilizaran en todo el modulo.
+
+
+//Modulo View.
 
 3. Se crea el postDetailViewController en el storyboard con sus respectivos campos, además de crean los IBOutlets en el viewController.
 
-4. En el archivo postDetailView se crea l a extensión que contendrá la función showPostDetail la cual setea el titulo y la imagen del post.
+4. En el archivo postDetailView se crea la extensión que contendrá la función showPostDetail la cual setea el titulo y la imagen del post.
+
+//Modulo Presenter.
+
+5. Se crea un archivo PostDetailPresenter, el cual herada de PostDetailPresenterProtocol. Este archivo tiene una variable view que tiene una etiqueta weak, ya que se relaciona con la vista.
+
+6. Se crean variables wireFrame, post y se implementa las funciones que hereda de la extensión, en este caso el viewDidLoad().
+
+//Modulo WireFrame.
+
+7. Se crea el archivo PostDetailWireFrame, el cual hereda de PostDetailWireFrameProtocol y se implementa la función createPostDetailModule relacionando cada uno de los modulos.
+
+// Conexión entre el didSelectRow en PostListview y el wireFrame en postDetailWireFrame
+
+1. En la función didSelectRowAt en el PostListView, se utiliza la función showPost del PostListPresenter.
+
+2. En la función showPost en el PostListPresenter, se utiliza la función presentPostDetailScreen en PostListWireFrame.
+
+3. En la función presentPostDetail se le indica al navigationController que agregue una nueva pantalla y acceda a ella.
+
+
 

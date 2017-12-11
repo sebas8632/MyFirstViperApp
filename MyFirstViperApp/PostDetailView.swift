@@ -45,6 +45,7 @@ class PostDetailView: UIViewController {
 extension PostDetailView: PostDetailViewProtocol {
     
     func showPostDetail(forPost post: PostModel) {
+        
         postDetailTitle.text = post.title
         
         let url = URL(string: post.imageUrl)

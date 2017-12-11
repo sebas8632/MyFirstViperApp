@@ -24,9 +24,9 @@ protocol PostDetailWireFrameProtocol : class{
 
 protocol PostDetailPresenterProtocol : class {
     
-    var wireFrame : PostListWireFrameProtocol? {get set}
-    var view: PostListViewProtocol? {get set}
-    var post: PostModel {get set}
+    var wireFrame : PostDetailWireFrameProtocol? {get set}
+    var view: PostDetailViewProtocol? {get set}
+    var post: PostModel? {get set}
     
     //View -> Presenter
     func viewDidLoad()

@@ -40,8 +40,17 @@ class PostListWireFrame: PostListWireFrameProtocol{
         
     }
 
+    /*
+     Función que presenta la pantalla postDetail.
+     */
     func presentPostDetailScreen(from view: PostListViewProtocol, forPost post: PostModel){
         
+        let postDetailViewController = PostDetailWireFrame.createPostDetailModule(forPost: post)
+        
+        if let sourceView = view as? UIViewController {
+            
+            sourceView.navigationController?.pushViewController(postDetailViewController, animated: true)
+        }
     }
     
 }

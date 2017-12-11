@@ -23,6 +23,8 @@
 		9EF4E2D71FD795790048ADDC /* PostListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4E2D61FD795790048ADDC /* PostListWireFrame.swift */; };
 		9EF68DCA1FD6370100800F38 /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF68DC91FD6370100800F38 /* PostListPresenter.swift */; };
 		9EF68DCC1FD63ECC00800F38 /* PostListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF68DCB1FD63ECC00800F38 /* PostListInteractor.swift */; };
+		9EF9DDE21FDE105100E2A57D /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF9DDE11FDE105100E2A57D /* PostDetailPresenter.swift */; };
+		9EF9DDE41FDE14AF00E2A57D /* PostDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF9DDE31FDE14AF00E2A57D /* PostDetailWireFrame.swift */; };
 		EFC5858738CCF08E0B4E9126 /* Pods_MyFirstViperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6540E81F97B99AB2932E3D89 /* Pods_MyFirstViperApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		9EF4E2D61FD795790048ADDC /* PostListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListWireFrame.swift; sourceTree = "<group>"; };
 		9EF68DC91FD6370100800F38 /* PostListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
 		9EF68DCB1FD63ECC00800F38 /* PostListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListInteractor.swift; sourceTree = "<group>"; };
+		9EF9DDE11FDE105100E2A57D /* PostDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		9EF9DDE31FDE14AF00E2A57D /* PostDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailWireFrame.swift; sourceTree = "<group>"; };
 		B40F11F8DD6C9AD6BD239D2D /* Pods-MyFirstViperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstViperApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstViperApp/Pods-MyFirstViperApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA86385BF755DCC37F73742C /* Pods-MyFirstViperApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstViperApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstViperApp/Pods-MyFirstViperApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +105,7 @@
 		9E1B35291FDC3E1E00ED705B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9EF9DDE11FDE105100E2A57D /* PostDetailPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 		9E1B352B1FDC3E2E00ED705B /* WireFrame */ = {
 			isa = PBXGroup;
 			children = (
+				9EF9DDE31FDE14AF00E2A57D /* PostDetailWireFrame.swift */,
 			);
 			name = WireFrame;
 			sourceTree = "<group>";
@@ -372,12 +378,14 @@
 				9EB8CA051FD0F0AD002DA42E /* AppDelegate.swift in Sources */,
 				9EB8CA1E1FD0F1F6002DA42E /* PostListProtocol.swift in Sources */,
 				9EF68DCA1FD6370100800F38 /* PostListPresenter.swift in Sources */,
+				9EF9DDE21FDE105100E2A57D /* PostDetailPresenter.swift in Sources */,
 				9EF4E2D51FD78E130048ADDC /* PostListRemoteDataManager.swift in Sources */,
 				9E1B35301FDC445500ED705B /* PostDetailView.swift in Sources */,
 				9E12FD6F1FD4D76A009A4993 /* PostListView.swift in Sources */,
 				9EF68DCC1FD63ECC00800F38 /* PostListInteractor.swift in Sources */,
 				9E12FD6B1FD4CF29009A4993 /* Endpoints.swift in Sources */,
 				9E12FD711FD4DF07009A4993 /* PostListCell.swift in Sources */,
+				9EF9DDE41FDE14AF00E2A57D /* PostDetailWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
